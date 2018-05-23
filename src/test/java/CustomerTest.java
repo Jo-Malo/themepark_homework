@@ -35,10 +35,11 @@ public class CustomerTest {
         assertEquals(50.00, customer.getHeight(), 0.01);
     }
 
-//    @Test
-//    public void canCheckTooTallForRide(){
-//        customer.getHeight();
-//        rollercoaster.getMinimumHeight()
-//        assertEquals( customer.payment(5));
-//    }
+    @Test
+    public void canCheckTooTallForRide(){
+        customer.getHeight();
+        rollercoaster.getMinimumHeight();
+        customer.payment(5);
+        assertEquals(5, customer.wallet);
+    }
 }

@@ -14,7 +14,7 @@ public class Customer extends Person implements IPayment, IHeight {
     }
 
     public void height(double inches){
-        if (height >= inches) {
+        if (this.height >= inches) {
             this.payment--;
         }
 
